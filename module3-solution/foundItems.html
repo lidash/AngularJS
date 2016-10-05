@@ -1,0 +1,6 @@
+<ul>
+  <li ng-repeat="item in dirNDCtrl.found">
+    {{ item.name }}, {{item.short_name}}, {{item.description}}
+    <button ng-click="dirNDCtrl.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ul>
